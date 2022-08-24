@@ -1,0 +1,804 @@
+{
+	"info": {
+		"_postman_id": "8ec4472d-c1fd-4119-85a3-97f551421c83",
+		"name": "actiTime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19233630"
+	},
+	"item": [
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get List of Projects",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Properties",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects/14",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List of Comments",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects/14/comments",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects",
+								"14",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"customerId\": 7, \"name\": \"Spaceship testing\",\r\n \"archived\": false, \"description\": \"urgent\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects/14",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"customerId\": 7, \"name\": \"Spaceship tester\",\r\n \"archived\": false, \"description\": \"urgant\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/projects/25",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"projects",
+								"25"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Get List of Tasks",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task Properties",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks/80",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks",
+								"80"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List of Comments",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks/80/comments?offset=1",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks",
+								"80",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\": \"Product documentation\", \"description\": \"null\", \"workflowStatusId\": 4, \"projectId\": 13, \"typeOfWorkId\": 2, \"deadline\": \"2019-04-12\", \"estimatedTime\": null}"
+						},
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks/80",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks",
+								"80"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\": \"Calls\", \"description\": \"support\", \"status\": \"open\", \"projectId\": 13, \"typeOfWorkId\": 2, \"estimatedTime\": 120}"
+						},
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "2%$$vjYM",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bitebs21@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://online.actitime.com/itstep/api/v1/tasks/141",
+							"protocol": "https",
+							"host": [
+								"online",
+								"actitime",
+								"com"
+							],
+							"path": [
+								"itstep",
+								"api",
+								"v1",
+								"tasks",
+								"141"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get customers",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2%$$vjYM",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bitebs21@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://online.actitime.com/itstep/api/v1/customers",
+					"protocol": "https",
+					"host": [
+						"online",
+						"actitime",
+						"com"
+					],
+					"path": [
+						"itstep",
+						"api",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customers by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://online.actitime.com/itstep/api/v1/projects",
+					"protocol": "https",
+					"host": [
+						"online",
+						"actitime",
+						"com"
+					],
+					"path": [
+						"itstep",
+						"api",
+						"v1",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 6,\r\n  \"name\": \"string\",\r\n  \"archived\": true,\r\n  \"description\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://online.actitime.com/itstep/api/v1/projects",
+					"protocol": "https",
+					"host": [
+						"online",
+						"actitime",
+						"com"
+					],
+					"path": [
+						"itstep",
+						"api",
+						"v1",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update project",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 6,\r\n  \"name\": \"stringBoot\",\r\n  \"archived\": true,\r\n  \"description\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://online.actitime.com/itstep/api/v1/projects/24",
+					"protocol": "https",
+					"host": [
+						"online",
+						"actitime",
+						"com"
+					],
+					"path": [
+						"itstep",
+						"api",
+						"v1",
+						"projects",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete project",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://online.actitime.com/itstep/api/v1/projects/24",
+					"protocol": "https",
+					"host": [
+						"online",
+						"actitime",
+						"com"
+					],
+					"path": [
+						"itstep",
+						"api",
+						"v1",
+						"projects",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "bitebs21@gmail.com",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "2%$$vjYM",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
